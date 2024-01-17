@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .abox{
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #777;
+
+            overflow: hidden;
+        }
+        /* .abox::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+        .abox .item{
+            border: 1px solid #777;
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+        }
+
+        .bbox{
+            border: 1px solid #777;
+            margin: 0 auto;
+            width: 500px;
+
+            overflow: hidden;
+        }
+        .bbox .left{
+            float: left;
+        }
+        .bbox .right{
+            float: right;
+        }
+        .bbox .left2{
+            float: left;
+        }
+
+        ul , li{list-style-type: none; padding: 0; margin: 0;}
+        .cbox{
+            width: 500px;
+            border: 1px solid #777;
+            margin: 0 auto;
+
+            overflow: hidden;
+        }
+        .cbox li{
+            box-sizing: border-box;
+            border: 1px solid #777;
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        .cbox li a {
+            display: 
+            ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="abox">
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+        <div class="item">상자</div>
+    </div>
+
+    <div class="bbox">
+        <div class="left">왼쪽</div>
+        <div class="right">오른쪽</div>
+        <div class="left2">왼쪽</div>
+        <div>하나 넣었음</div>
+    </div>
+
+    <hr>
+        <ul class="cbox">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+</body>
+</html>

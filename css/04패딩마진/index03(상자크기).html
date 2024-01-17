@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p{
+        border: 1px solid #777;
+        /* min-width: 300px;
+        min-height: 300px; */
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .box-content{
+        border: 1px solid #777;
+        width: 300px;
+        padding: 0px 20px;
+
+        /* box-sizing: content-box; 박스너비 계산식 = 너비 + 패딩 + 윤곽 */
+        box-sizing: border-box; /* 패딩 + 윤곽은 너비에 포합시킴*/
+    }
+    </style>
+</head>
+<body>
+    <P>
+        aegrjaberhgjlaergaejkrahljerhbalr <br>
+        aegrjaberhgjlaergaejkrahljerhbalr <br>
+      
+    </P>
+    <div class="box-content">
+        박스너비  = 너비 + 패딩 + 윤곽 <br>
+        상자크기가 변합니다.
+    </div>
+    
+</body>
+</html>

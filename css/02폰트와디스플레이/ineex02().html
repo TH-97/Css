@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 문단 가로정렬 */
+        .abox{
+            /* 꼭 글자에만 쓰는게 아니다 */
+            text-align: right; 
+            text-decoration: underline;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 문단세로정렬 - 기준이 되는 태그에 적용 */
+        .bbox img{
+            vertical-align: middle;
+        }
+        /* 꿀팁: 문단을 세로에서 정가운데로 보내야 하는데, 기준이 될 태그가 없는 경우 */
+        .cbox{
+            height: 200px;
+            width: 200px;
+            /* 라인 하이츠와 하이츠를 맞추면 중간으로 온다~(한줄일때만 사용가능) */
+            line-height: 200px;
+            text-align: center;
+            border: 1px solid #777;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="abox"> 글자관련속성</p>
+
+    <a href="#">글자</a>
+
+    <p class="bbox">
+        안녕하세요
+        <img src="img/919826.png" alt="이미지">
+    </p>
+
+    <p class="cbox">
+        문단정가운데정렬
+    </p>
+    
+</body>
+</html>

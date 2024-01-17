@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        .top{
+            width: 500px;
+            border: 1px solid #777;
+            margin: 0 auto;
+        }
+        .top .middle{
+            border: 1px solid #777;
+            padding: 20px 0;
+            
+        }
+        .top .middle .middle2{
+            border: 1px solid #777;
+
+            overflow: hidden;
+        }
+        .top .middle .middle2 .b{
+            border: 1px solid #777;
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        탑
+        <div class="middle">
+            <div class="middle2">
+                <div class="b">중간 패딩 위아래</div>
+                <div class="b">중간 패딩 위아래</div>
+            </div>
+        </div>
+        바텀
+    </div>
+    
+</body>
+</html>

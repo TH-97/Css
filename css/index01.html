@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .abox p{      abox 안에 있는 p 만 red
+            color: red;
+        } */
+
+        /* 자식만 red / li 안에 있는 p는 안된다  */
+        .abox > p{color: red;}
+        .abox > ul p{color: green;}
+
+        .bbox input[type=password]{color: red;}
+        .bbox input[name=aaa]{color: green;}
+
+        .cbox li[class*="item"]{color: blue;}
+        /* active는 클릭했을때 */
+        .ccbox .a:active {background-color: pink;}
+        /* 마우스를 가져다 대었을때 색이 변함 */
+        .ccbox .b:hover { background-color: green; }
+        .ccbox input:focus{border: 1px solid purple; outline: none;}
+    </style>
+</head>
+<body>
+    <div class="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+        </ul>
+
+        <p>하위 선택자</p>
+    </div>
+    <hr>
+
+    <div class="bbox">
+        아이디:<input type="text" name="aaa">
+        이름:<input type="text" name="bbb">
+        비밀번호:<input type="password" name="ccc">
+    </div>
+
+    <div class="cbox">
+        <ul><li class="item-1">아이템</li></ul>
+        <ul><li class="item-2">아이템</li></ul>
+        <ul><li class="item-3">아이템</li></ul>
+        <ul><li class="item-4">아이템</li></ul>
+        <ul><li class="item-5">아이템</li></ul>
+    </div>
+
+    <hr>
+
+    <div class="ccbox">
+        <div class="a">엑티브</div>
+        <div class="b">호버</div>
+        포거스:<input type="text" name="aaa">
+    </div>
+    
+</body>
+</html>

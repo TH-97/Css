@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #wrap{
+            height: 500px;
+            border: 1px solid #777;
+
+            background-image: url(img/colorful-2468874_1280.jpg);
+            background-repeat: no-repeat;
+            /* 무조건 이미지가 잘리지 않도록 */
+            /* background-size: contain; */
+            /* 빈공간없이 똭채우고 이미지를 자름 */
+            background-size: cover;
+        }
+        #wrap-mid{
+            height: 500px;
+            border: 1px solid #777;
+
+            background-image: url(img/colorful-2468874_1280.jpg);
+            background-size: 100%;
+            background-attachment: fixed; /* 스크롤과 상관없이 백드라운드 고정 - 마치 움직이는 효과처럼 보이게 할 수 있다  */
+
+        }
+    </style>
+</head>
+<body>
+
+    <section id="wrap">
+        ..................
+    </section>
+
+    <section id="wrap-mid">
+
+    </section>
+
+    <section style="height: 1000px;border: 1px solid #777;">
+        
+    </section>
+    
+</body>
+</html>
