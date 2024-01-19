@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{margin: 0; padding: 0;}
+        img{width: 100px;}
+        .box{
+            width: 800px;
+            margin: auto;
+            border: 1px solid #777;
+            padding: 10px;
+
+        }
+        .box .top-box{
+            border: 1px solid #777;
+            margin-left: 110px;
+            position: relative;
+            height: 200px;
+
+        }
+        .box .top-box img{
+            position: absolute;
+            left: -110px;
+        }
+        .box .b-box{
+            padding-top: 10px;
+            margin-left: 110px;
+        }
+        .box .b-box .left{
+            display: block;
+        }
+        .box .b-box .right{
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="top-box">
+            <img src="img/919826.png" class="img1">
+            힌트:이미지영역을 포지션을 사용합니다
+
+        </div>
+
+        <div class="b-box">
+            <button class="right">등록하기</button>
+            <input type="text" class="left">
+            <input type="text">
+        </div>
+    </div>
+    
+</body>
+</html>

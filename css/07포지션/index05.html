@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .inner1{
+            height: 500px;
+        }
+        .inner2{
+            /* 
+            스티키는 포지션 스태틱 속성으로 있다가, 특정 높이에서 픽스 바뀌는 속성
+            
+            1.top, bottum, left, right 중에서 특정 위치에서 fixed로 변경할 속성을 반드시 하나
+            2.부모태그에 overflow:  hidden이 있으면 동작을 하지 않습니다
+            3.1번 속성중 1개에 스크롤 됬을때 
+            */
+            background-color: red;
+            position: sticky;
+            top: 0;
+        }
+        .inner2 ul li{
+            display: inline-block;
+        }
+        .inner2 ul li a{
+            display: block;
+        }
+        .inner3{
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner1">
+        inner1
+    </div>
+
+    <div class="inner2">
+        <ul>
+            <li><a href="">중단메뉴</a></li>
+            <li><a href="">중단메뉴</a></li>
+
+            <li><a href="">중단메뉴</a></li>
+
+            <li><a href="">중단메뉴</a></li>
+
+            <li><a href="">중단메뉴</a></li>
+        </ul>
+    </div>
+    <div class="inner3">
+        inner3
+    </div>
+</body>
+</html>
